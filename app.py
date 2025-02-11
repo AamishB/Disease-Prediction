@@ -22,7 +22,7 @@ with st.sidebar:
                          menu_icon='hospital-fill',icons=['activity','heart','person'],default_index=0)
 
 if selected == 'Diabetes Prediction':
-    st.title('Diabetes Prection Using Ml')
+    st.title('Diabetes Prediction Using Ml')
     col1,col2,col3=st.columns(3)
     with col1:
         Pregnancies=st.text_input('Number of Pregnancies')
