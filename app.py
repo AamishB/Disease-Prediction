@@ -9,11 +9,11 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    page_icon='👩🏻‍⚕️')
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-diabetes_model = pickle.load(open(r"{working_dir}/models/diabetes_model.sav",'rb'))
+diabetes_model = pickle.load(open(f"{working_dir}/models/diabetes_model.sav",'rb'))
 
-heart_model = pickle.load(open(r"{working_dir}/models/heart_model.sav",'rb'))
+heart_model = pickle.load(open(f"{working_dir}/models/heart_model.sav",'rb'))
 
-parkinsons_model = pickle.load(open(r"{working_dir}/models/parkinsons_model.sav",'rb'))
+parkinsons_model = pickle.load(open(f"{working_dir}/models/parkinsons_model.sav",'rb'))
 
 
 with st.sidebar:
