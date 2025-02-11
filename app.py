@@ -8,11 +8,11 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide', 
                    page_icon='👩🏻‍⚕️')
 
-diabetes_model = pickle.load(open(r"C:\Users\Lenovo\Desktop\Disease Outbreak\models\diabetes_model.sav",'rb'))
+diabetes_model = pickle.load(open(r"..\Disease Prediction\models\diabetes_model.sav",'rb'))
 
-heart_model = pickle.load(open(r"C:\Users\Lenovo\Desktop\Disease Outbreak\models\heart_model.sav",'rb'))
+heart_model = pickle.load(open(r"..\Disease Prediction\models\heart_model.sav",'rb'))
 
-parkinsons_model = pickle.load(open(r"C:\Users\Lenovo\Desktop\Disease Outbreak\models\parkinsons_model.sav",'rb'))
+parkinsons_model = pickle.load(open(r"..\Disease Prediction\models\parkinsons_model.sav",'rb'))
 
 
 with st.sidebar:
