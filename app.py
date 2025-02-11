@@ -7,12 +7,13 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    layout='wide', 
                    page_icon='👩🏻‍⚕️')
+working_dir = os.path.dirname(os.path.abspath(__file__))
 
-diabetes_model = pickle.load(open(r"..\Disease Prediction\models\diabetes_model.sav",'rb'))
+diabetes_model = pickle.load(open(r"{working_dir}/models/diabetes_model.sav",'rb'))
 
-heart_model = pickle.load(open(r"..\Disease Prediction\models\heart_model.sav",'rb'))
+heart_model = pickle.load(open(r"{working_dir}/models/heart_model.sav",'rb'))
 
-parkinsons_model = pickle.load(open(r"..\Disease Prediction\models\parkinsons_model.sav",'rb'))
+parkinsons_model = pickle.load(open(r"{working_dir}/models/parkinsons_model.sav",'rb'))
 
 
 with st.sidebar:
